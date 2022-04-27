@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
+<html lang="en" dir="ltr" xmlns:th="http://www.thymeleaf.org">
 <head>
     <meta charset="utf-8">
     <link rel="icon" th:href="@{media/favicon.ico}">
@@ -9,7 +9,7 @@
             name="Bouncing Spheres"
             content="Bouncing Spheres project deployment site">
     <meta property="og:title" content="Bouncing Spheres">
-    <meta property="og:url" content="https://roman-octavian.github.io/Bounce-Site/">
+    <meta property="og:url" content="https://bounce-database.herokuapp.com/">
     <meta property="og:type" content="website">
     <meta property="og:locale" content="en_GB">
     <meta name="description" content= "Bouncing Spheres project deployment site">
@@ -40,8 +40,15 @@
             <div id="welcome-title">
                 <h1>Bouncing Spheres</h1>
                 <div id="statistics">
-                    <p>Times Downloaded: <br>0</p>
-                    <p>Collisions Occurred: <br>200000000000</p>
+                    <div class="stats-container">
+                        <p>Total Wall Collisions: </p>
+                        <p th:text="${stats.wall_collision_count}"></p>
+                    </div>
+                    <div class="stats-container">
+                        <p>Total Sphere Collisions: </p>
+                        <p th:text="${stats.sphere_collision_count}"></p>
+                    </div>
+
                 </div>
             </div>
         </section>
@@ -94,12 +101,12 @@
                                 </p>
                             </li>
                             <li>
-                                <p class="normal-text"><a href="https://www.oracle.com/java/technologies/downloads/"target="_blank">Download</a>
+                                <p class="normal-text"><a href="https://www.oracle.com/java/technologies/downloads/" target="_blank">Download</a>
                                 and install the Java Development Kit 17 or higher
                                 </p>
                             </li>
                             <li>
-                                <p class="normal-text"><a href="https://github.com/Roman-Octavian/Bounce/blob/main/bin/Bouncing%20Spheres.exe?raw=true"target="_blank">Download</a>
+                                <p class="normal-text"><a href="https://github.com/Roman-Octavian/Bounce/blob/main/bin/Bouncing%20Spheres.exe?raw=true" target="_blank">Download</a>
                                     the Bouncing Spheres executable file
                                 </p>
                             </li>

@@ -121,17 +121,16 @@ h1 {
     justify-content: space-evenly;
 }
 
-#statistics > p {
-    color: #fff;
-    font-size: 2rem;
+.stats-container {
     border: white 1px solid;
     border-radius: 8px;
     padding: 10px;
     margin-top: 2vh;
 }
 
-#description-section {
-    padding-left: 1vw;
+.stats-container > p {
+    color: #fff;
+    font-size: 2rem;
 }
 
 .header {
@@ -155,6 +154,8 @@ h1 {
 }
 video {
     width: 90%;
+    margin-top: 3vh;
+    margin-bottom: 3vh;
 }
 
 #stack {
@@ -168,10 +169,6 @@ video {
     font-family: "Spectral", sans-serif;
     font-size: 2rem;
     margin-right: 1rem;
-}
-
-#installation-section {
-    padding-left: 1vw;
 }
 
 a {
@@ -241,10 +238,6 @@ code {
     padding: 2rem;
 }
 
-#instructions-section {
-    padding-left: 1vw;
-}
-
 .img-div {
     display: flex;
     align-items: center;
@@ -253,8 +246,12 @@ code {
     margin-bottom: 2rem;
 }
 
+img {
+    max-width: 90%;
+}
+
 .content {
-    margin-left: 5vw;
+    margin-left: 2rem;
     padding: 2rem;
 }
 
@@ -324,4 +321,147 @@ footer {
     text-align: center;
     margin-top: 2vh;
     padding-bottom: 2vh;
+}
+
+@media only screen and (min-width: 1px) and (max-width: 600px) {
+
+    #logo-img {
+        display: flex;
+        align-items: center;
+        height: 30px;
+        width: 30px;
+    }
+
+    #logo {
+        margin-left: 3vw;
+    }
+
+    #nav-text {
+        display: none;
+    }
+
+    #nav-ul {
+        margin-right: 3vw;
+        margin-left: auto;
+        text-indent: 2vw;
+    }
+
+    .nav-link {
+        font-size: 1.35rem;
+    }
+
+    .nav-link:hover {
+        animation: none;
+    }
+
+    h1 {
+        font-size: 3rem;
+        margin-bottom: 1vh;
+    }
+
+    @keyframes h1animation {
+        0% {
+            color: rgba(255, 255, 255, 0);
+            font-size: 1rem;
+        }
+        100% {
+            color: rgba(255, 255, 255, 1);
+            font-size: 3rem;
+        }
+    }
+
+
+    .stats-container > p {
+        color: #fff;
+        font-size: 1.2rem;
+    }
+
+    h2 {
+        font-size: 2.5rem;
+        margin-bottom: 5vh;
+    }
+
+    .content {
+        margin-left: 1rem;
+        padding: 1rem;
+    }
+
+    #stack {
+        display: none;
+    }
+
+    footer {
+        height: auto;
+        margin-top: 3vh;
+    }
+
+    #footer-text {
+        margin-top: 2vh;
+        font-size: 1.8rem;
+    }
+
+    #contact-links {
+        list-style-type: none;
+        display: inline-block;
+        margin: 3vh 0 3vh 3vw;
+
+    }
+
+    .p-link {
+        text-indent: 2vw;
+        font-size: 1.5rem;
+        margin-bottom: 1vh;
+    }
+
+    .p-link:hover {
+        transform: none;
+        color: rgb(0, 38, 255);
+    }
+
+}
+
+@media only screen and (min-width: 601px) and (max-width: 992px) {
+
+    #nav-text {
+        font-size: 1.6rem;
+    }
+
+    .nav-link {
+        font-size: 1.5rem;
+    }
+
+    .nav-link:hover {
+        animation: none;
+    }
+
+    h1 {
+        font-size: 6.5rem;
+        margin-bottom: 1vh;
+    }
+
+    @keyframes h1animation {
+        0% {
+            color: rgba(255, 255, 255, 0);
+            font-size: 1rem;
+        }
+        100% {
+            color: rgba(255, 255, 255, 1);
+            font-size: 6.5rem;
+        }
+    }
+
+    #subtitle {
+        font-size: 3.25rem;
+    }
+
+    h2 {
+        font-size: 4rem;
+        margin-bottom: 3vh;
+    }
+
+    .tile-description {
+        font-size: 1.5rem;
+        margin-bottom: 0;
+        height: 9%;
+    }
 }
