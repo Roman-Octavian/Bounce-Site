@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="utf-8">
+    <link rel="icon" th:href="@{media/favicon.ico}">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#FFFFFF">
+    <meta
+            name="Bouncing Spheres"
+            content="Bouncing Spheres project deployment site">
+    <meta property="og:title" content="Bouncing Spheres">
+    <meta property="og:url" content="https://roman-octavian.github.io/Bounce-Site/">
+    <meta property="og:type" content="website">
+    <meta property="og:locale" content="en_GB">
+    <meta name="description" content= "Bouncing Spheres project deployment site">
+    <meta name="author" content="Octavian Roman">
+
+    <link rel="stylesheet" th:href="@{styles.css}">
+
+    <title>Bouncing Spheres</title>
+</head>
+<body>
+    <nav id="navbar">
+        <div id="logo">
+            <img id="logo-img" th:src="@{media/icon.png}" alt="Logo" width=35 height=35>
+        </div>
+        <div id="nav-text">
+            <p>Bouncing Spheres</p>
+        </div>
+        <ul id="nav-ul">
+            <li><a class="nav-link" href="#welcome-section">Home</a></li>
+            <li><a class="nav-link" href="#description-section">Description</a></li>
+            <li><a class="nav-link" href="#installation-section">Installation</a></li>
+            <li><a class="nav-link" href="#instructions-section">How to Use</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <section id="welcome-section">
+            <div id="welcome-title">
+                <h1>Bouncing Spheres</h1>
+                <div id="statistics">
+                    <p>Times Downloaded: <br>0</p>
+                    <p>Collisions Occurred: <br>200000000000</p>
+                </div>
+            </div>
+        </section>
+        <section id="description-section">
+            <div class="header">
+                <h2>Description</h2>
+            </div>
+            <div class="content">
+                <p class="normal-text"><strong>"Bouncing Spheres"</strong> is a full-stack, native, multi-threaded program which attempts to simulate simple
+                    circle physics. The application provides granular control over the simulation by means of an
+                    intuitive user interface.
+                </p>
+                <p class="normal-text">It can be used to play around with spheres. The user has great control over the emulation, and can
+                    therefore choose to tailor it to their taste.
+                </p>
+                <div id="stack">
+                    <p>Tech Stack</p>
+                    <img src="https://img.shields.io/badge/Java-ED8B00?style=for-the-badge&logo=java&logoColor=white" alt="Java Logo"/>
+                    <img src="https://img.shields.io/badge/MySQL-00000F?style=for-the-badge&logo=mysql&logoColor=white" alt="MySQL Logo"/>
+                    <img src="https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white" alt="CSS3 Logo"/>
+                    <img src="https://img.shields.io/badge/Heroku-430098?style=for-the-badge&logo=heroku&logoColor=white" alt="Heroku Logo"/>
+                </div>
+                <div class="video">
+                    <video autoplay controls>
+                        <source th:src="@{media/sample.mp4}" type="video/mp4">
+                    </video>
+                </div>
+            </div>
+        </section>
+        <section id="installation-section">
+            <div class="header">
+                <h2>Installation</h2>
+            </div>
+            <div class="content">
+                <div>
+                    <p class="normal-text">Bounce is open-source. Clone the repository and build the application in your preferred environment here:</p>
+                    <a href="https://github.com/Roman-Octavian/Bounce" target="_blank">GitHub Repo</a>
+                    <p class="normal-text">If that is not your cup of tea, several executable versions are available:</p>
+                </div>
+                <div id="windows">
+                    <div id="windows-header">
+                        <img class="os-img" th:src="@{media/windows.png}" alt="Windows Logo"/>
+                        <p class="os-name">Microsoft Windows&copy;</p>
+                    </div>
+                    <div id="windows-content">
+                        <ol>
+                            <li>
+                                <p class="normal-text"><a href="https://www.java.com/en/download/" target="_blank">Download</a>
+                                and install the Java Runtime Environment 1.7 or higher
+                                </p>
+                            </li>
+                            <li>
+                                <p class="normal-text"><a href="https://www.oracle.com/java/technologies/downloads/"target="_blank">Download</a>
+                                and install the Java Development Kit 17 or higher
+                                </p>
+                            </li>
+                            <li>
+                                <p class="normal-text"><a href="https://github.com/Roman-Octavian/Bounce/blob/main/bin/Bouncing%20Spheres.exe?raw=true"target="_blank">Download</a>
+                                    the Bouncing Spheres executable file
+                                </p>
+                            </li>
+                            <li>
+                                <p class="normal-text">
+                                    Run the executable. You will most certainly get a warning:
+                                </p>
+                                <img th:src="@{media/warning.png}" alt="Windows warning"/>
+                            </li>
+                            <li>
+                                <p class="normal-text">
+                                    Click on "<u>More info</u>". This warning appears because I'm not a known developer.
+                                </p>
+                                <img th:src="@{media/warning2.png}" alt="Windows more info"/>
+                            </li>
+                            <li>
+                                <p class="normal-text">
+                                    Click on "Run anyway". That should be it.<br> If you don't trust this software, check the aforementioned GitHub repo for malicious code.
+                                </p>
+                            </li>
+                        </ol>
+                    </div>
+                </div>
+                <div id="mac-linux">
+                    <div id="mac-linux-header">
+                        <img class="os-img" th:src="@{media/apple.png}" alt="macOS Logo"/>
+                        <p class="os-name">macOS&copy;</p>
+                        <img class="os-img" th:src="@{media/linux.png}" alt="Linux Logo"/>
+                        <p class="os-name">GNU/Linux&trade;</p>
+                    </div>
+                    <div id="mac-linux-content">
+                        <ol>
+                            <li>
+                                <p class="normal-text"><a href="https://www.java.com/en/download/" target="_blank">Download</a>
+                                    and install the Java Runtime Environment 1.7 or higher. On Linux, using a package manager for step one and two is highly recommended.
+                                </p>
+                            </li>
+                            <li>
+                                <p class="normal-text"><a href="https://www.oracle.com/java/technologies/downloads/" target="_blank">Download</a>
+                                    and install the Java Development Kit 17 or higher. For example, on Arch-based Linux do: <code>sudo pacman -S jre-openjdk</code>
+                                </p>
+                            </li>
+                            <li>
+                                <p class="normal-text"><a href="https://github.com/Roman-Octavian/Bounce/blob/main/bin/Bounce.jar?raw=true" target="_blank">Download</a>
+                                    the Bouncing Spheres JAR artifact file
+                                </p>
+                            </li>
+                            <li>
+                                <p class="normal-text">
+                                    Use a file manager to navigate to where the JAR was downloaded and drag it onto your Desktop
+                                </p>
+                            </li>
+                            <li>
+                                <p class="normal-text">
+                                    Open any terminal, type <code>cd Desktop</code> or equivalent and press Enter.
+                                </p>
+                            </li>
+                            <li>
+                                <p class="normal-text">
+                                    Copy the following command:<br>
+                                    <code>java -DUSER=b6903f704a649d -DPASS=ce0454e6f8a92b8 -cp 'Bounce.jar' com.bounce.Launcher</code>
+                                    <br>Paste it into your terminal, and press Enter.
+                                </p>
+                            </li>
+                            <li>
+                                <p class="normal-text">
+                                    If the program has started, but it does not look right, close it and repeat step 6 with this command instead:<br>
+                                    <code>java -DUSER=b6903f704a649d -DPASS=ce0454e6f8a92b8 -Dprism.forceGPU=true -cp 'Bounce.jar' com.bounce.Launcher</code>
+                                </p>
+                            </li>
+                            <li>
+                                <p class="normal-text">
+                                    If the program does not run at all,
+                                <a href="https://gluonhq.com/products/javafx/" target="_blank">Download</a>
+                                    and install the JavaFX SDK and try again.
+                                </p>
+                            </li>
+                        </ol>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="instructions-section">
+            <div class="header">
+                <h2>How to use</h2>
+            </div>
+            <div class="content">
+                <p class="normal-text">On application startup, the user is greeted by a small window at the bottom-middle of the display.</p>
+                <div class="img-div">
+                    <img th:src="@{media/initialize.png}" alt="App look on initialization"/>
+                </div>
+                <p class="normal-text">This is the control panel which will facilitate all program functionality to the user.
+                    It should be noted that while only this relatively small panel is visible, the application is actually maximized,
+                    and the rest of the display is being occupied by a transparent background.
+                    This can be easily visualized by turning off "Transparent Background" in the "Options" Tab.
+                    The "H" key can be pressed to show/hide this panel during the simulation.<br>
+
+                    The control panel consists of four tabs:</p>
+                <div id="info">
+                    <h3 class="tab-header">1. Info:</h3>
+                    <p class="normal-text">Scrollable Tab which provides basic information to the user.
+                        Mentions how to use the features that may be the hardest to grasp.
+                        Detects the resolution of the display and informs the user of the bounds which will apply to the application.
+                        Note that the resolution might be detected as lower than expected if the display is configured to a higher scale than native.
+                        Has a link that redirects to my GitHub profile for support.</p>
+                    <div class="img-div">
+                        <img th:src="@{media/info.png}" alt="Info tab"/>
+                    </div>
+                </div>
+                <div id="new-sphere">
+                    <h3 class="tab-header">2. New Sphere:</h3>
+                    <p class="normal-text">This tab deals with Sphere generation. It has four main fields:</p>
+                    <ul>
+                        <li id="position" class="normal-text"><strong>"Position"</strong>: <br>Where the Sphere will be generated.
+                            Values outside the screen bounds will force the sphere to the nearest valid position.
+                            The button marked with a "+" symbol right next to the "Position" Label is the Coordinate Picker.
+                            It can be dragged along the display to select a specific location aided by a cross-hair view.
+                            When the selection is released, the coordinates are automatically set in their corresponding fields.
+                            Leaving these fields empty will return random values.<br>
+                            <div class="img-div">
+                                <img th:src="@{media/coordinatepicker.png}" alt="Coordinate Picker"/>
+                            </div>
+                        </li>
+                        <li class="normal-text"><strong>"Size"</strong>: <br>A slider which will denote the radius of a newly generated sphere.
+                            The minimum amount is 10 pixels, and the maximum amount is 100.<br></li>
+                        <li class="normal-text"><strong>"Initial Vector"</strong>: <br>Denotes the initial movement pattern of the sphere on both the X and Y axis.
+                            Negative numbers signify backward movement, and positive numbers forward movement.
+                            Higher numbers in both directions produce a higher speed. The options go from -10 to 10, and a "Random" option which randomizes the values is also present.
+                            For example, an initial vector of "X: 5 , Y: 5" will generate a sphere that will move diagonally towards the bottom-right of the screen at 5 pixels per frame:
+                            <div class="video">
+                                <video autoplay controls>
+                                    <source th:src="@{media/video.mp4}" type="video/mp4">
+                                </video>
+                            </div>
+                        <br></li>
+                        <li class="normal-text"><strong>"Colour"</strong>: <br>A colour picker that allows us to determine the colour of the newly generated sphere.<br></li>
+                    </ul>
+                    <p id="buttons" class="normal-text">Additionally, three buttons are located at the bottom of the tab:</p>
+                    <ul>
+                        <li class="normal-text"><strong>"Clear spheres"</strong>: Will remove all the spheres from the display and interrupt their corresponding threads.</li>
+                        <li class="normal-text"><strong>"Reset fields"</strong>: Brings all the fields in the tab back to their default values.</li>
+                        <li class="normal-text"><strong>"Generate Sphere"</strong>: Creates a new sphere which runs on its own thread by taking into account all the fields in the tab.</li>
+                    </ul>
+                    <div class="img-div">
+                        <img th:src="@{media/newsphere.png}" alt="Info tab"/>
+                    </div>
+                </div>
+                <div id="Stats">
+                    <h3 class="tab-header">3. Stats:</h3>
+                    <p class="normal-text">Scrollable Tab which provides statistics to the user. Refreshes every time it is initialized.
+                        Can be refreshed manually with a "Refresh" button.
+                        Has two sections; Green for the session statistics, and blue for the global statistics.
+                        "Session" refers to those values generated during the current local session,
+                        whereas "Global" to the values collectively generated by all users.</p>
+                    <p class="normal-text">Both sections have:</p>
+                    <ul>
+                        <li class="normal-text">"<strong>Total Spheres</strong>": Amount of spheres generated during the session and by all users since the database was implemented.</li>
+                        <li class="normal-text">"<strong>Sphere-to-Sphere Collisions</strong>": Amount of collisions that have taken place between two given spheres during the session and for all users.</li>
+                        <li class="normal-text">"<strong>Sphere-to-Wall Collisions</strong>": Amount of collisions that have taken place between a sphere and the edges of the screen during the session and for all users.</li>
+                    </ul>
+                    <p class="normal-text">The green "Session" section has one additional entry — "Spheres Currently Running", which measures the amount of spheres running at any given time.</p>
+                    <p class="normal-text">It should be noted that, due to limitations of the free plan for the Heroku ClearDB database, the remote database is only queried twice:
+                        On application start-up and on application exit via the "Exit" button in the "Options" tab to update the statistics with the session values.
+                        Closing the application through methods other than the intended one will result in loss of session data.</p>
+                    <div class="img-div">
+                        <img th:src="@{media/stats.png}" alt="Statistics tab"/>
+                    </div>
+                </div>
+                <div id="Options">
+                    <h3 class="tab-header">4. Options:</h3>
+                    <p class="normal-text">Lastly, "Options" contains three options:</p>
+                    <ul>
+                        <li class="normal-text">"<strong>Transparent Background</strong>" toggle: Allows turning transparent background on or off. On by default; if off, transparency is replaced by a gray gradient.</li>
+                        <li class="normal-text">"<strong>Sound</strong>" toggle: Allows turning sound effects on or off. Off by default because it can get very loud and slow down the application if abused.</li>
+                        <li class="normal-text">"<strong>Exit</strong>" button: Terminates the application. Delay of 2-3 seconds between button press and actual termination is due to slow (free plan) database update.</li>
+                    </ul>
+                    <div class="img-div">
+                        <img th:src="@{media/options.png}" alt="Options tab"/>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p id="footer-text">Get In Touch:</p>
+        <ul id="contact-links">
+            <li><a href="https://github.com/Roman-Octavian" target="_blank" id="profile-link" class="p-link"><img th:src="@{media/github.png}" alt="github-icon" width="32" height="32">GitHub</a></li>
+            <li><a href="https://www.linkedin.com/in/romanoctavian/" target="_blank" class="p-link"><img th:src="@{media/linkedin.png}" alt="github-icon" width="32" height="32">LinkedIn</a></li>
+            <li><a href="mailto:work.octavian@gmail.com" target="_blank" class="p-link"><img th:src="@{media/email.png}" alt="github-icon" width="32" height="32">E-mail</a></li>
+        </ul>
+        <p id="legal">&copy; 2022 Octavian Roman, MIT License</p>
+    </footer>
+</body>
+</html>
