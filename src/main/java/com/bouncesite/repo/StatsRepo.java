@@ -13,7 +13,7 @@ public class StatsRepo {
     private JdbcTemplate template;
 
     public Statistics fetchStats() {
-        String sql = "SELECT id, sphere_collision_count, wall_collision_count FROM statistics;";
+        String sql = "SELECT id, sphere_collision_count, wall_collision_count, sphere_count FROM statistics;";
         RowMapper<Statistics> rowMapper = new BeanPropertyRowMapper<>(Statistics.class);
         return template.queryForObject(sql, rowMapper);
     }

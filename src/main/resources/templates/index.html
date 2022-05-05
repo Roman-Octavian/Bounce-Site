@@ -41,12 +41,12 @@
                 <h1>Bouncing Spheres</h1>
                 <div id="statistics">
                     <div class="stats-container">
-                        <p>Total Wall Collisions: </p>
-                        <p th:text="${stats.wall_collision_count}"></p>
+                        <p>Total Spheres: </p>
+                        <p th:text="${stats.sphere_count}"></p>
                     </div>
                     <div class="stats-container">
-                        <p>Total Sphere Collisions: </p>
-                        <p th:text="${stats.sphere_collision_count}"></p>
+                        <p>Total Collisions: </p>
+                        <p th:text="${stats.sphere_collision_count + stats.wall_collision_count}"></p>
                     </div>
 
                 </div>
